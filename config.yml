@@ -23,7 +23,7 @@ pipeline:
   - ordinal
   - time
   - url
-  url: http://duckling:8000
+  url: http://localhost:8000
 - name: FallbackClassifier
   threshold: 0.6
 
