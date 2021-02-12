@@ -1,0 +1,11 @@
+version: "2.0"
+
+
+nlu:
+- intent: login_intent
+  examples: |
+    - meu login é [ft.wipro.ldvieira](login_entity)
+    - o meu usuario e [ft.wipro.rfonseca](login_entity)
+    - ta ai meu usuario [ft.wipro.rfonseca](login_entity)
+    - quero me logar [ft.wipro.ldvieira](login_entity)
+    - meu usuário é o [ft.wipro.amoraes](login_entity)

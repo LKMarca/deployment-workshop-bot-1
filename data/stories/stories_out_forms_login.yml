@@ -1,0 +1,28 @@
+version: "2.0"
+stories:
+
+- story: interactive_story_collect_informatons_happy_1
+  steps:
+  - intent: greet_intent
+  - action: action_greet
+  - action: action_check_login
+  - action: login_form
+  - active_loop: login_form
+  - intent: goodbye_intent
+  - action: action_goodbye
+  - action: action_deactivate_loop
+  - action: action_system
+  - action: action_check_login
+
+- story: interactive_story_collect_informatons_happy_2
+  steps:
+  - intent: greet_intent
+  - action: action_greet
+  - action: action_check_login
+  - action: login_form
+  - active_loop: login_form
+  - intent: goodbye_intent
+  - action: action_goodbye
+  - action: action_deactivate_loop
+  - action: action_system
+  - action: action_check_login

@@ -1,0 +1,7 @@
+version: "2.0"
+
+rules:
+- rule: help
+  steps:
+  - intent: help_intent
+  - action: action_help

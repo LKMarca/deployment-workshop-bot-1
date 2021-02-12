@@ -1,0 +1,17 @@
+version: "2.0"
+nlu:
+- intent: help_intent
+  examples: |
+    - ajuda
+    - preciso de ajuda
+    - quero ajuda
+    - help 
+    - poderia me ajudar
+    - ajude-me 
+    - socorro
+    - sos
+    - menu 
+    - assistencia 
+    - assintência 
+    - preciso de auxílio
+    - não sei o que fazer

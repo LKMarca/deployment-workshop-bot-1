@@ -1,0 +1,13 @@
+version: "2.0"
+rules:
+- rule: collect forms
+  steps:
+  - action: collect_form
+  - active_loop: collect_form
+condition:
+  - active_loop: collect_form
+    steps:
+  - action: collect_form
+  - active_loop: null
+  - slot_was_set:
+    - requested_slot: null

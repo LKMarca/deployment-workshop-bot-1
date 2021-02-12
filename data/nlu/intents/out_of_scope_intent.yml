@@ -1,0 +1,47 @@
+version: "2.0"
+
+nlu:
+- intent: out_of_scope_intent
+  examples: |
+   - afasfa
+   - nÃ£o confio em você
+   - kkkkk
+   - qual a previsão do tempo?
+   - batata
+   - comprar smartphone
+   - sacar dinheiro
+   - celular
+   - gostaria de um xis
+   - quero comprar um x bacon
+   - gostaria de comprar um lanche
+   - testar sua inteligÃªncia
+   - não tem nada haver
+   - ta mas eai?
+   - ada51bufa3sofgno
+   - xcfabsdqwee
+   - sdjnu187f1tt561fa
+   - aaaaaaaaa
+   - fuuuuuu
+   - 1223567
+   - +-/!@9)%
+   - ?????
+   - ...
+   - !!!
+   - usahushduahushua
+   - apksapkpakkaspkoapskaop
+   - irjqojioqjroijqwo
+   - fnasndamsnd
+   - sextou
+   - toca uma musica
+   - onde vc esta?
+   - quero falar com alguem
+   - sera que chove hoje?
+   - e pão com queijo
+   - ikle56u4
+   - a
+   - aaa
+   - credo
+   - e nois na parada
+   - é nois
+   - sei lá
+   - sei la

@@ -1,0 +1,22 @@
+version: "2.0"
+
+nlu:
+- intent: informations_intent
+  examples: |
+    - informar [ct](ct_entity)
+    - informar [id](id_entity)
+    - [id](id_entity)
+    - quero procurar pelo [id](id_entity)
+    - tenho [id](id_entity)
+    - quero comunicar meu [ct](ct_entity)
+    - este é meu [id](id_entity)
+    - segue o meu [ct](ct_entity)
+    - o [ect](ect_entity)
+    - segue seu [ect](ect_entity)
+    - dois
+    - 1
+    - vinte e cinco
+    - Tenho um [id](id_entity) 19
+    - segunda opção
+    - terceira opção
+    - primeira opção

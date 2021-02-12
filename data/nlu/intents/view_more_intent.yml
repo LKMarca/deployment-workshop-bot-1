@@ -1,0 +1,15 @@
+version: "2.0"
+
+nlu:
+- intent: view_more_intent
+  examples: |
+    - ver mais
+    - visualizar mais
+    - mais
+    - quero ver mais
+    - + 
+    - more 
+    - mostra mais 
+    - taca mais 
+    - outros
+    - opções

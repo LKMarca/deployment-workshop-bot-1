@@ -1,0 +1,21 @@
+version: "2.0"
+nlu:
+    
+- intent: try_again_intent
+  examples: |
+    - executar novamente
+    - novamente
+    - executar de novo
+    - executar os testes
+    - executar
+    - executar ct novamente
+    - executar casos de testes novamente 
+    - refazer os testes
+    - de novo
+    - outra vez 
+    - mais uma vez 
+    - again 
+    - one more time
+    - tente outra vez
+    - tenta de novo 
+    - tentar novamente

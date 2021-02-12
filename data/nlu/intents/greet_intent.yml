@@ -1,0 +1,22 @@
+version: "2.0"
+nlu:
+- intent: greet_intent
+  examples: |
+    - oi
+    - eai
+    - olá
+    - opa
+    - e aí
+    - bom dia
+    - boa tarde
+    - boa noite
+    - dale
+    - dalhe
+    - muito prazer
+    - oie 
+    - hello 
+    - hey 
+    - e ae 
+    - como estamos
+    - começa
+    - inicia

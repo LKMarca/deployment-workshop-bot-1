@@ -1,0 +1,14 @@
+Att TR29 Vanessa 13/01/2021 (pasta docs):
+    - criada a pasta docs com os arquivos de acordo com a atual Sprint
+    - PR para a develop 
+Att TR50 Vanessa 
+    - revisão das mensagens do bot (com o que tem até o momento) (21/01/2021)
+Att TR56 Vanessa 
+    - add botões no bot (Sim, Não e voltar) (25/01/2021)
+    - botões de ct na vertical
+Att TR623 Vanessa 
+    - add funcionalidade de ajuda para o bot (28/01/2021)
+Att Vanessa TR73
+    - att das intents: affirm_intent, come_back_intent, continue_intent, deny_intent, greet_intent, try_again_intent e view_more_intent (28/01/2021)
+Att Vanessa TR74
+    - frases do bot atualizadas (29/01/2021)

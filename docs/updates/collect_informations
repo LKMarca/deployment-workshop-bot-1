@@ -1,0 +1,17 @@
+Att Vanessa TR14 
+    - resolvido problema de preenchimento do ct com informações incorretas corrigido (15/01/2021)
+    - resolvido problema de ct e id incorreto corrigido (15/01/2021)
+    - Pendente problema de preencher os slots com novas informações (19/01/2021)
+    - resolvido problema de finalizar fallbacks (18/01/2021)
+    - resolvido slot error_collet não zerando quando volta do id para o ct (21/01/2021)
+Att Vanessa TR50
+    - retorno das informações caso o usuário se arrependa, ex: voltar par ao ct (22/01/2021)
+Att Vanessa TR35
+    - feito os botões de informações para o usuários escolher qual informação deseja alterar (28/01/2021)
+    - resolvido o problema de preencher o slot error_collect no momento das correções de informação (28/01/2021)
+    - retorna para o ct caso o usuário indique que as infomações estão incorretas (28/01/2021)
+Att Vanessa TR73
+    - troca de affirm_entity_ para affirm_intent nos ifs (28/01/2021)
+Att Vanessa TR80
+    - resolvido loops em collect e ct (01/02/2021)
+    - resolvido fallback do ask collect (01/02/2021)

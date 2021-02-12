@@ -1,0 +1,15 @@
+version: "2.0"
+
+
+nlu:
+- intent: reset_intent
+  examples: |
+    - reset
+    - force reset
+    - restart
+    - /reset
+    - resetar
+    - forçar resete
+    - start
+    - reiniciar
+    - recomeçar

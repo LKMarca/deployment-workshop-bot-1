@@ -1,0 +1,13 @@
+version: "2.0"
+rules:
+- rule: checklist n1 
+  steps:
+  - action: checklist_n1_form
+  - active_loop: checklist_n1_form
+condition:
+  - active_loop: checklist_n1_form
+    steps:
+  - action: checklist_n1_form
+  - active_loop: null
+  - slot_was_set:
+    - requested_slot: null

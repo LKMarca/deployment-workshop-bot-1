@@ -1,0 +1,23 @@
+version: "2.0"
+nlu:
+- intent: goodbye_intent
+  examples: |
+    - até mais
+    - falou
+    - flw
+    - até logo
+    - sair
+    - tchau
+    - to indo nessa
+    - adeus
+    - encerrar
+    - quero sair
+    - sair até mais
+    - encarrar o sistema
+    - tchau tchau
+    - Sair, flw
+    - vlw flw
+    - deslogar
+    - logoff
+    - encerrar sessão
+    - encerrar sessao

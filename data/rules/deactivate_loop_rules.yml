@@ -1,0 +1,49 @@
+version: "2.0"
+
+rules:
+- rule: User wants to end conversation
+  condition:
+  - active_loop: login_form
+  steps:
+  - intent: goodbye_intent 
+  - action: action_goodbye
+  - action: action_deactivate_loop
+  - action: action_system
+  - action: action_check_login
+  wait_for_user_input: false
+  
+
+
+- rule: User wants to end conversation_2
+  condition:
+  - active_loop: collect_form
+  steps:
+  - intent: goodbye_intent 
+  - action: action_goodbye
+  - action: action_deactivate_loop
+  - action: action_system
+  - action: action_check_login
+  wait_for_user_input: false
+
+- rule: User wants to end conversation_3
+  condition:
+  - active_loop: checklist_n1_form
+  steps:
+  - intent: goodbye_intent 
+  - action: action_goodbye
+  - action: action_deactivate_loop
+  - action: action_system
+  - action: action_check_login
+  wait_for_user_input: false
+
+
+- rule: User wants to end conversation_4
+  condition:
+  - active_loop: open_ticket_form
+  steps:
+  - intent: goodbye_intent 
+  - action: action_goodbye
+  - action: action_deactivate_loop
+  - action: action_system
+  - action: action_check_login
+  wait_for_user_input: false

@@ -1,0 +1,21 @@
+version: "2.0"
+nlu:
+    
+- intent: continue_intent
+  examples: |
+    - [Continuar](continue_entity)
+    - [seguir](continue_entity) comprando
+    - [continuar](again_entity) comprando
+    - [prosseguir](continue_entity) 
+    - [continue](continue_entity)
+    - eu quero [continuar](continue_entity) novamente 
+    - vamos [seguir](continue_entity)
+    - [prosseguir](continue_entity)
+    - [continuar](continue_entity)
+    - [continue](continue_entity)
+    - [segue](continue_entity) o fluxo
+    - [progredir](continue_entity)
+    - [segue](continue_entity) o baile
+    - [continua](continue_entity)
+    - dá [seguimento](continue_entity)
+    - [processegue](continue_entity)

@@ -1,0 +1,427 @@
+version: "2.0"
+stories:
+
+- story: interactive_story_happy
+  steps:
+  - intent: greet_intent
+  - action: action_greet
+  - action: action_check_login
+  - action: login_form
+  - active_loop: login_form
+  - slot_was_set:
+    - requested_slot: user_alm_qc
+  - slot_was_set:
+    - user_alm_qc: admin
+  - slot_was_set:
+    - erro_fluxo_try: '0'
+  - slot_was_set:
+    - requested_slot: null
+  - active_loop: null
+  - action: collect_form
+  - active_loop: collect_form
+  - slot_was_set:
+    - requested_slot: ct
+  - slot_was_set:
+    - ct: '467'
+  - slot_was_set:
+    - error_collect: '0'
+  - slot_was_set:
+    - id_: '1234'
+  - slot_was_set:
+    - ect: '234'
+  - slot_was_set:
+    - requested_slot: collect
+  - slot_was_set:
+    - collect: true
+  - slot_was_set:
+    - error_collect: '0'
+  - slot_was_set:
+    - informations: true
+  - slot_was_set:
+    - correct_informations: true
+  - slot_was_set:
+    - requested_slot: null
+  - active_loop: null
+  - action: action_check_n1
+  - slot_was_set:
+    - test_mass: false
+  - slot_was_set:
+    - test_run: false
+  - slot_was_set:
+    - call_form_checklist_n1: false
+  - action: open_ticket_form
+  - active_loop: open_ticket_form
+  - slot_was_set:
+    - requested_slot: title_slot
+  - slot_was_set:
+    - title_slot: titulo do defeito
+  - slot_was_set:
+    - error_collect: '0'
+  - slot_was_set:
+    - requested_slot: details_slot
+  - slot_was_set:
+    - details_slot: detalhes do defeito
+  - slot_was_set:
+    - error_collect: '0'
+  - slot_was_set:
+    - requested_slot: check_details_slot
+  - slot_was_set:
+    - check_details_slot: true
+  - slot_was_set:
+    - error_collect: '0'
+  - slot_was_set:
+    - requested_slot: null
+  - active_loop: null
+  - action: action_system
+  - action: action_check_login
+
+- story: interactive_story_n1_test_mass_problem_happy
+  steps:
+  - intent: greet_intent
+  - action: action_greet
+  - action: action_check_login
+  - action: login_form
+  - active_loop: login_form
+  - slot_was_set:
+    - requested_slot: user_alm_qc
+  - slot_was_set:
+    - user_alm_qc: admin
+  - slot_was_set:
+    - erro_fluxo_try: '0'
+  - slot_was_set:
+    - requested_slot: null
+  - active_loop: null
+  - action: collect_form
+  - active_loop: collect_form
+  - slot_was_set:
+    - requested_slot: ct
+  - slot_was_set:
+    - ct: '467'
+  - slot_was_set:
+    - error_collect: '0'
+  - slot_was_set:
+    - id_: '1234'
+  - slot_was_set:
+    - ect: '234'
+  - slot_was_set:
+    - requested_slot: collect
+  - slot_was_set:
+    - collect: true
+  - slot_was_set:
+    - error_collect: '0'
+  - slot_was_set:
+    - informations: true
+  - slot_was_set:
+    - correct_informations: true
+  - slot_was_set:
+    - requested_slot: null
+  - active_loop: null
+  - action: action_check_n1
+  - slot_was_set:
+    - call_form_checklist_n1: true
+  - action: checklist_n1_form
+  - active_loop: checklist_n1_form
+  - slot_was_set:
+    - requested_slot: internet
+  - slot_was_set:
+    - internet: false
+  - slot_was_set:
+    - requested_slot: site
+  - slot_was_set:
+    - site: false
+  - slot_was_set:
+    - erro_fluxo_try: '0'
+  - slot_was_set:
+    - open_bug: true
+  - slot_was_set:
+    - requested_slot: null
+  - slot_was_set:
+    - requested_slot: null
+  - active_loop: null
+  - action: action_check_slots_form_n1
+  - slot_was_set:
+    - test_mass: false
+  - slot_was_set:
+    - test_run: false
+  - slot_was_set:
+    - erro_fluxo_try: '0'
+  - slot_was_set:
+    - open_bug: true
+  - action: open_ticket_form
+  - active_loop: open_ticket_form
+  - slot_was_set:
+    - requested_slot: title_slot
+  - slot_was_set:
+    - title_slot: titulo do defeito
+  - slot_was_set:
+    - error_collect: '0'
+  - slot_was_set:
+    - requested_slot: details_slot
+  - slot_was_set:
+    - details_slot: detalhes do defeito
+  - slot_was_set:
+    - error_collect: '0'
+  - slot_was_set:
+    - requested_slot: check_details_slot
+  - slot_was_set:
+    - check_details_slot: true
+  - slot_was_set:
+    - error_collect: '0'
+  - slot_was_set:
+    - requested_slot: null
+  - active_loop: null
+  - action: action_system
+  - action: action_check_login
+
+
+- story: interactive_story_n1_test_run_problem_happy
+  steps:
+  - intent: greet_intent
+  - action: action_greet
+  - action: action_check_login
+  - action: login_form
+  - active_loop: login_form
+  - slot_was_set:
+    - requested_slot: user_alm_qc
+  - slot_was_set:
+    - user_alm_qc: admin
+  - slot_was_set:
+    - erro_fluxo_try: '0'
+  - slot_was_set:
+    - requested_slot: null
+  - active_loop: null
+  - action: collect_form
+  - active_loop: collect_form
+  - slot_was_set:
+    - requested_slot: ct
+  - slot_was_set:
+    - ct: '467'
+  - slot_was_set:
+    - error_collect: '0'
+  - slot_was_set:
+    - id_: '1234'
+  - slot_was_set:
+    - ect: '234'
+  - slot_was_set:
+    - requested_slot: collect
+  - slot_was_set:
+    - collect: true
+  - slot_was_set:
+    - error_collect: '0'
+  - slot_was_set:
+    - informations: true
+  - slot_was_set:
+    - correct_informations: true
+  - slot_was_set:
+    - requested_slot: null
+  - active_loop: null
+  - action: action_check_n1
+  - slot_was_set:
+    - test_mass_problem: false
+  - slot_was_set:
+    - test_run_problem: true
+  - slot_was_set:
+    - call_form_checklist_n1: true
+  - action: checklist_n1_form
+  - active_loop: checklist_n1_form
+  - slot_was_set:
+    - requested_slot: test_run
+  - slot_was_set:
+    - test_run: false
+  - slot_was_set:
+    - erro_fluxo_try: '0'
+  - slot_was_set:
+    - open_bug: true
+  - slot_was_set:
+    - requested_slot: null
+  - slot_was_set:
+    - requested_slot: null
+  - active_loop: null
+  - action: action_check_slots_form_n1
+  - slot_was_set:
+    - test_mass: false
+  - slot_was_set:
+    - test_run: false
+  - slot_was_set:
+    - erro_fluxo_try: '0'
+  - slot_was_set:
+    - open_bug: true
+  - action: open_ticket_form
+  - active_loop: open_ticket_form
+  - slot_was_set:
+    - requested_slot: title_slot
+  - slot_was_set:
+    - title_slot: titulo do defeito
+  - slot_was_set:
+    - error_collect: '0'
+  - slot_was_set:
+    - requested_slot: details_slot
+  - slot_was_set:
+    - details_slot: detalhes do defeito
+  - slot_was_set:
+    - error_collect: '0'
+  - slot_was_set:
+    - requested_slot: check_details_slot
+  - slot_was_set:
+    - check_details_slot: true
+  - slot_was_set:
+    - error_collect: '0'
+  - slot_was_set:
+    - requested_slot: null
+  - active_loop: null
+  - action: action_system
+  - action: action_check_login
+
+- story: interactive_story_n1_test_mass_problem_unhappy
+  steps:
+  - intent: greet_intent
+  - action: action_greet
+  - action: action_check_login
+  - action: login_form
+  - active_loop: login_form
+  - slot_was_set:
+    - requested_slot: user_alm_qc
+  - slot_was_set:
+    - user_alm_qc: admin
+  - slot_was_set:
+    - erro_fluxo_try: '0'
+  - slot_was_set:
+    - requested_slot: null
+  - active_loop: null
+  - action: collect_form
+  - active_loop: collect_form
+  - slot_was_set:
+    - requested_slot: ct
+  - slot_was_set:
+    - ct: '467'
+  - slot_was_set:
+    - error_collect: '0'
+  - slot_was_set:
+    - id_: '1234'
+  - slot_was_set:
+    - ect: '234'
+  - slot_was_set:
+    - requested_slot: collect
+  - slot_was_set:
+    - collect: true
+  - slot_was_set:
+    - error_collect: '0'
+  - slot_was_set:
+    - informations: true
+  - slot_was_set:
+    - correct_informations: true
+  - slot_was_set:
+    - requested_slot: null
+  - active_loop: null
+  - action: action_check_n1
+  - slot_was_set:
+    - test_mass_problem: true
+  - slot_was_set:
+    - test_run_problem: false
+  - slot_was_set:
+    - call_form_checklist_n1: true
+  - action: checklist_n1_form
+  - active_loop: checklist_n1_form
+  - slot_was_set:
+    - requested_slot: test_mass
+  - slot_was_set:
+    - test_mass: true
+  - slot_was_set:
+    - test_run: true
+  - slot_was_set:
+    - erro_fluxo_try: '0'
+  - slot_was_set:
+    - open_bug: false
+  - slot_was_set:
+    - requested_slot: null
+  - slot_was_set:
+    - requested_slot: null
+  - active_loop: null
+  - action: action_check_slots_form_n1
+  - slot_was_set:
+    - test_mass: false
+  - slot_was_set:
+    - test_run: false
+  - slot_was_set:
+    - erro_fluxo_try: '0'
+  - slot_was_set:
+    - open_bug: false
+  - action: action_system
+  - action: action_check_login
+
+- story: interactive_story_n1_test_run_problem_unhappy
+  steps:
+  - intent: greet_intent
+  - action: action_greet
+  - action: action_check_login
+  - action: login_form
+  - active_loop: login_form
+  - slot_was_set:
+    - requested_slot: user_alm_qc
+  - slot_was_set:
+    - user_alm_qc: admin
+  - slot_was_set:
+    - erro_fluxo_try: '0'
+  - slot_was_set:
+    - requested_slot: null
+  - active_loop: null
+  - action: collect_form
+  - active_loop: collect_form
+  - slot_was_set:
+    - requested_slot: ct
+  - slot_was_set:
+    - ct: '467'
+  - slot_was_set:
+    - error_collect: '0'
+  - slot_was_set:
+    - id_: '1234'
+  - slot_was_set:
+    - ect: '234'
+  - slot_was_set:
+    - requested_slot: collect
+  - slot_was_set:
+    - collect: true
+  - slot_was_set:
+    - error_collect: '0'
+  - slot_was_set:
+    - informations: true
+  - slot_was_set:
+    - correct_informations: true
+  - slot_was_set:
+    - requested_slot: null
+  - active_loop: null
+  - action: action_check_n1
+  - slot_was_set:
+    - test_mass_problem: false
+  - slot_was_set:
+    - test_run_problem: true
+  - slot_was_set:
+    - call_form_checklist_n1: true
+  - action: checklist_n1_form
+  - active_loop: checklist_n1_form
+  - slot_was_set:
+    - requested_slot: test_run
+  - slot_was_set:
+    - test_mass: true
+  - slot_was_set:
+    - test_run: true
+  - slot_was_set:
+    - erro_fluxo_try: '0'
+  - slot_was_set:
+    - open_bug: false
+  - slot_was_set:
+    - requested_slot: null
+  - slot_was_set:
+    - requested_slot: null
+  - active_loop: null
+  - action: action_check_slots_form_n1
+  - slot_was_set:
+    - test_mass: false
+  - slot_was_set:
+    - test_run: false
+  - slot_was_set:
+    - erro_fluxo_try: '0'
+  - slot_was_set:
+    - open_bug: false
+  - action: action_system
+  - action: action_check_login

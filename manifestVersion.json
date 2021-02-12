@@ -1,0 +1,69 @@
+{
+	"id": "a3776db8-7777-4c93-9acf-3dd3dd63ebf9",
+	"acceptMappedClaims": null,
+	"accessTokenAcceptedVersion": 2,
+	"addIns": [],
+	"allowPublicClient": null,
+	"appId": "c9b899da-29be-4004-9628-fb0d6e5e636b",
+	"appRoles": [],
+	"oauth2AllowUrlPathMatching": false,
+	"createdDateTime": "2021-01-07T21:05:58Z",
+	"disabledByMicrosoftStatus": null,
+	"groupMembershipClaims": null,
+	"identifierUris": [],
+	"informationalUrls": {
+		"termsOfService": null,
+		"support": null,
+		"privacy": null,
+		"marketing": null
+	},
+	"keyCredentials": [],
+	"knownClientApplications": [],
+	"logoUrl": null,
+	"logoutUrl": null,
+	"name": "QABot",
+	"oauth2AllowIdTokenImplicitFlow": false,
+	"oauth2AllowImplicitFlow": false,
+	"oauth2Permissions": [],
+	"oauth2RequirePostResponse": false,
+	"optionalClaims": {
+		"idToken": [],
+		"accessToken": []
+	},
+	"orgRestrictions": [],
+	"parentalControlSettings": {
+		"countriesBlockedForMinors": [],
+		"legalAgeGroupRule": "Allow"
+	},
+	"passwordCredentials": [
+		{
+			"customKeyIdentifier": null,
+			"endDate": "2022-01-08T11:58:23.403Z",
+			"keyId": "6f745cdb-8da0-4b43-ad54-c7e3ef247d99",
+			"startDate": "2021-01-08T11:58:56.738Z",
+			"value": "2Ww~F625-UI2AN.hcvyWC7~DJRX~wuR-ei",
+			"createdOn": "2021-01-08T11:58:57.7529146Z",
+			"hint": "2Ww",
+			"displayName": "QABot"
+		}
+	],
+	"preAuthorizedApplications": [],
+	"publisherDomain": null,
+	"replyUrlsWithType": [],
+	"requiredResourceAccess": [
+		{
+			"resourceAppId": "00000003-0000-0000-c000-000000000000",
+			"resourceAccess": [
+				{
+					"id": "e1fe6dd8-ba31-4d61-89e7-88639da4683d",
+					"type": "Scope"
+				}
+			]
+		}
+	],
+	"samlMetadataUrl": null,
+	"signInUrl": null,
+	"signInAudience": "AzureADandPersonalMicrosoftAccount",
+	"tags": [],
+	"tokenEncryptionKeyId": null
+}

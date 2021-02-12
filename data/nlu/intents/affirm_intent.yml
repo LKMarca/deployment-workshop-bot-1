@@ -1,0 +1,41 @@
+version: "2.0"
+
+
+nlu:
+- intent: affirm_intent
+  examples: |
+    - [yes](affirm_entity)
+    - [yep](affirm_entity)
+    - [é isso mesmo](affirm_entity)
+    - [aham](affirm_entity)
+    - [sim](affirm_entity)
+    - [s](affirm_entity)
+    - [ss](affirm_entity)
+    - [positivo](affirm_entity)
+    - [claro](affirm_entity)
+    - isso [ok](affirm_entity)
+    - [uhum](affirm_entity)  
+    - posso [sim](affirm_entity)
+    - [ok](affirm_entity)
+    - [sim](affirm_entity) 
+    - [ok](affirm_entity) vamos la 
+    - [uhum](affirm_entity) 
+    - [sim](affirm_entity)  [aceito](affirm_entity) 
+    - eu [aceito](affirm_entity)
+    - [sim](affirm_entity) [sim](affirm_entity)
+    - [bora](affirm_entity) la 
+    - [sim](affirm_entity)
+    - [confirmar](affirm_entity)
+    - eu [confirmo](affirm_entity)
+    - [si](affirm_entity)
+    - [tão](affirm_entity) 
+    - estão [corretas](affirm_entity)
+    - [tao](affirm_entity)
+    - [estão](affirm_entity)
+    - [estao](affirm_entity)
+    - está [certo](affirm_entity)
+    - [afirmativo](affirm_entity)
+    - tá [certo](affirm_entity)
+    - ta [certo](affirm_entity)
+    - [sim](affirm_entity), correto!
+    - [tenho](affirm_entity)

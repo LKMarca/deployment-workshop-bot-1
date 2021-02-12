@@ -1,0 +1,28 @@
+version: "2.0"
+
+nlu:
+
+- intent: deny_intent
+  examples: |
+    - [no](deny_entity)
+    - [n](deny_entity)
+    - [nop](deny_entity)
+    - [não](deny_entity)
+    - [negativo](deny_entity)
+    - [não](deny_entity)
+    - [n](deny_entity)
+    - [nn](deny_entity)
+    - [negativo](deny_entity)
+    - [nao](deny_entity) 
+    - [não](deny_entity) posso
+    - [claro](affirm_entity) que [não](deny_entity)
+    - [nunca](deny_entity)
+    - [não](deny_entity) tenho interesse
+    - [não](deny_entity) gostaria
+    - [não](deny_entity) [confirmar](affirm_entity)
+    - [não](deny_entity) quero
+    - [não](deny_entity) to afim
+    - [não](deny_entity) tá certo
+    - [nao](deny_entity) estão certos
+    - [não](deny_entity) estão corretas 
+    - [nao](deny_entity) ta correto

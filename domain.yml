@@ -1,31 +1,211 @@
+version: "2.0"
+
+######### INTENÇÕES
 intents:
-  - greet
-  - goodbye
-  - affirm
-  - deny
-  - mood_great
-  - mood_unhappy
-  - bot_challenge
+- affirm_intent
+- deny_intent
+- greet_intent
+- goodbye_intent
+- continue_intent
+- come_back_intent
+- system_intent
+- out_of_scope_intent
+- view_more_intent
+- try_again_intent
+- start
+- help_intent
+- reset_intent
+- login_intent
+- informations_intent
+entities:
+- affirm_entity
+- deny_entity
+- again_entity
+- continue_entity
+- login_entity
+- ct_entity
+- id_entity
+- number
 
-responses:
-  utter_greet:
-  - text: "Hey! How are you?"
+###### SLOTS
+slots:
+  user_alm_qc:
+    type: text
+    influence_conversation: true
+  user_data:
+    type: text
+    influence_conversation: false
+  erro_fluxo_try:
+    type: text
+    initial_value: '0'
+    influence_conversation: false
+  requested_slot:
+    type: text
+    influence_conversation: false
+  senderid:
+    type: text
+    influence_conversation: false
+  ct:
+    type: text
+    influence_conversation: false
+  ect:
+    type: text
+    influence_conversation: false
+  id_:
+    type: text
+    influence_conversation: false
+  collect:
+    type: bool
+    influence_conversation: false
+  informations:
+    type: bool
+    influence_conversation: false
+  correct_informations:
+    type: bool
+    influence_conversation: false
+  title_slot:
+    type: text
+    influence_conversation: false
+  details_slot:
+    type: text
+    influence_conversation: false
+  duplicate_title_slot:
+    type: bool
+    influence_conversation: false
+  error_collect:
+    type: text
+    initial_value: '0'
+    influence_conversation: true
+  stop_run:
+    type: bool
+    initial_value: false
+    influence_conversation: false
+  test_mass_problem:
+    type: bool
+    initial_value: false
+    influence_conversation: false
+  test_run_problem:
+    type: bool
+    initial_value: false
+    influence_conversation: false
+  open_bug:
+    type: bool
+    influence_conversation: true
+  test_mass:
+    type: bool
+    influence_conversation: false
+  test_run:
+    type: bool
+    influence_conversation: false
+  call_form_checklist_n1:
+    type: bool
+    influence_conversation: true
+  count:
+    type: text
+    initial_value: '1'
+    influence_conversation: false
+  count_finish:
+    type: text
+    initial_value: '0'
+    influence_conversation: false
+  open_new_ticket:
+    type: bool
+    influence_conversation: true
+  check_details_slot:
+    type: bool
+    influence_conversation: true
+  page_ct:
+    type: any
+    initial_value: '1'
+    influence_conversation: false
+  all_ct:
+    type: list
+    influence_conversation: false
+  site:
+    type: text
+    initial_value: '1'
+    influence_conversation: false
+  cycle:
+    type: text
+    initial_value: '1'
+    influence_conversation: false
+  internet:
+    type: text
+    initial_value: '1'
+    influence_conversation: false
 
-  utter_cheer_up:
-  - text: "Here is something to cheer you up:"
-    image: "https://i.imgur.com/nGF1K8f.jpg"
 
-  utter_did_that_help:
-  - text: "Did that help you?"
 
-  utter_happy:
-  - text: "Great, carry on!"
-
-  utter_goodbye:
-  - text: "Bye"
-
-  utter_iamabot:
-  - text: "I am a bot, powered by Rasa."
+ ##### ACTIONS
+actions:
+ - validate_login_form
+ - validate_open_ticket_form
+ - action_ask_user_alm_qc
+ - action_clear_slots
+ - action_rta_login
+ - action_collect_information
+ - action_ask_ct
+ - action_ask_collect_correct
+ - action_ask_informations
+ - action_ask_correct_informations
+ - action_ask_title_slot
+ - action_ask_details_slot  
+ - action_goodbye
+ - action_greet
+ - validate_collect_form
+ - action_ask_collect
+ - action_check_n1
+ - validate_checklist_n1_form
+ - action_ask_internet
+ - action_ask_open_bug
+ - action_ask_site
+ - action_come_back
+ - action_check_slots_form_n1
+ - action_finish_collect
+ - action_check_login
+ - action_system
+ - action_ask_check_details_slot
+ - action_force_reset
+ - action_help
+##### FORMS
+forms:
+  login_form:
+    user_alm_qc:
+    - type: from_text
+      not_intent: goodbye_intent, help_intent, reset_intent
+  collect_form:
+    ct:
+    - type: from_text
+      not_intent: goodbye_intent, help_intent, reset_intent, come_back_intent
+    collect:
+    - type: from_text
+      not_intent: goodbye_intent, help_intent, reset_intent
+    informations:
+    - type: from_text
+      not_intent: goodbye_intent, help_intent, reset_intent
+    correct_informations:
+    - type: from_text
+      not_intent: goodbye_intent, help_intent, reset_intent
+  open_ticket_form:
+    title_slot:
+    - type: from_text
+      not_intent: goodbye_intent, help_intent, reset_intent
+    details_slot:
+    - type: from_text
+      not_intent: goodbye_intent, help_intent, reset_intent
+    check_details_slot:
+    - type: from_text
+      not_intent: goodbye_intent, reset_intent
+  checklist_n1_form:
+    internet:
+    - type: from_text
+      not_intent: goodbye_intent, help_intent, reset_intent
+    site:
+    - type: from_text
+      not_intent: goodbye_intent, help_intent, reset_intent
+    open_bug:
+    - type: from_text
+      not_intent: goodbye_intent, reset_intent
 
 session_config:
   session_expiration_time: 60

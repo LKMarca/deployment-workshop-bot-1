@@ -1,0 +1,16 @@
+version: "2.0"
+nlu:
+    
+- intent: come_back_intent
+  examples: |
+    - voltar
+    - voltar para o ct
+    - voltar para o checklist n1
+    - gostaria de voltar para o passo anterior 
+    - retornar 
+    - back
+    - come back 
+    - faz o retorno
+    - quero escolher outro ct
+    - gostaria de escolher outro caso de teste
+    - quero voltar para os casos de testes

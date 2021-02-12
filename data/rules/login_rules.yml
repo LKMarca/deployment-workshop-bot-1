@@ -1,0 +1,25 @@
+version: "2.0"
+rules:
+- rule: activa o formulario e envia
+  steps:
+  - intent: greet_intent
+  - action: action_greet
+  - action: action_check_login
+  wait_for_user_input: false
+
+
+- rule: Force reset
+  steps:
+  - intent: reset_intent
+  - action: action_force_reset
+  - action: action_greet
+  - action: action_check_login
+  wait_for_user_input: false
+
+- rule: Start
+  steps:
+  - intent: start
+  - action: action_force_reset
+  - action: action_greet
+  - action: action_check_login
+  wait_for_user_input: false
